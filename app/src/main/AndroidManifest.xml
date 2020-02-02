@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.talaga.myposresto">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.talaga.myposresto.ItemMasterActivity"></activity>
+        <activity
+            android:name="com.talaga.myposresto.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.SplashActivity" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.talaga.myposresto.MainMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.MenuUtamaActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.HelpActivity" />
+        <activity
+            android:name="com.talaga.myposresto.SalesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.kasir.SalesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.CategoryList">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.CustomersList">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.admin.CustomersList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.ItemMasterList">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.PendingOrderActivity">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.PendingOrderActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.reports.Reports">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.Reports" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.util.Setting">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.Setting" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.TablesList">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.admin.TablesList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.TablesInput">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.admin.TablesInput" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.SuppliersList">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.admin.SupplierList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.WaitersList">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.admin.WaitersList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.WaitersInput">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.admin.WaitersInput" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.ItemMasterInput">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.admin.ItemMasterInput" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.talaga.myposresto.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.kasir.LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.CategoryInput">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.admin.CategoryInput" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.CustomersInput">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.admin.CustomersInput" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.admin.SuppliersInput">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.admin.SuppliersInput" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.ItemMasterSelectActivity">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.ItemMasterSelect" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.model.SalesPaymentCash">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.model.SalesPaymentCash" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.model.SalesPaymentCard">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.model.SalesPaymentCard" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.CustomerSelectActivity">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.kasir.CustomerSelectActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.WaiterSelectActivity">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.kasir.WaiterSelectActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.TableSelectActivity">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.kasir.TableSelectActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.util.BTDeviceList">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.BTDeviceList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.reports.Report01">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.reports.Report01" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.reports.Report02">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.reports.Report02" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.reports.Report03">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.reports.Report03" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.reports.Report04">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.reports.Report04" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.reports.Report05">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.reports.Report05" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.reports.Report06">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.reports.Report06" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.reports.Report07">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.reports.Report07" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.reports.Report08">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.reports.Report08" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talaga.myposresto.reports.Report09">
+            <intent-filter>
+                <action android:name="com.talaga.myposresto.reports.Report09" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
