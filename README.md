@@ -13,7 +13,7 @@ Silahkan download sebelum dijalankan kasih akses untuk baca atau tulis media ext
 
 # Donasi
 
-Bagi kalian yang mau ikut donasi untuk pengembangan selanjutnya silahkan kirim ke:
+Bagi kalian yang mau ikut donasi berapa saja untuk pengembangan selanjutnya silahkan kirim ke:
 
 BCA KCP CENGKEH JAKARTA
 AN: ANDRI ANDIANA, NoRek: 24 000 920 98
